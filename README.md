@@ -39,7 +39,15 @@ Q1. Vision Transformer Experiments on CIFAR-10
 
 Tested multiple configs (depth = number of encoder blocks, width = embedding dim):
 
-Config (Depth, Width)Best Val Acc(4, 128)~70.8%(6, 128) baseline~74.7%(8, 128)~76–77%(6, 192)~78–79%(6, 256)~80%(8, 192)~81%
+| Config (Depth, Width) | Best Val Acc   |
+|-----------------------|----------------|
+| (4, 128)              | ~70.8%         |
+| (6, 128) baseline     | ~74.7%         |
+| (8, 128)              | ~76–77%        |
+| (6, 192)              | ~78–79%        |
+| (6, 256)              | ~80%           |
+| (8, 192)              | ~81%           |
+
 
 **Insights**:
 
@@ -53,10 +61,10 @@ Config (Depth, Width)Best Val Acc(4, 128)~70.8%(6, 128) baseline~74.7%(8, 128)~7
 Summary 
 -----------------
 
-1.  **Baseline ViT** underperforms (~75%) without augmentation.
+1.  **_Baseline ViT_** underperforms (~75%) without augmentation.
     
-2.  **Data augmentation** alone boosts performance to ~81%, showing it’s critical for small datasets like CIFAR-10.
+2.  **_Data augmentation_** alone boosts performance to ~81%, showing it’s critical for small datasets like CIFAR-10.
     
-3.  **Scaling depth/width** improves accuracy, but width scaling is more impactful than depth scaling for this dataset size and compute budget.
+3.  **_Scaling depth/width_** improves accuracy, but width scaling is more impactful than depth scaling for this dataset size and compute budget.
     
-4.  For CIFAR-10: augmentation + moderate width scaling (~192–256) gives the best trade-off.
+4.  _For CIFAR-10: augmentation + moderate width scaling (~192–256) gives the best trade-off._
