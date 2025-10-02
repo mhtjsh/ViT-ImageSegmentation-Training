@@ -67,4 +67,4 @@ Summary
     
 3.  **_Scaling depth/width_** improves accuracy, but width scaling is more impactful than depth scaling for this dataset size and compute budget.
     
-4.  _For CIFAR-10: augmentation + moderate width scaling (~192–256) gives the best trade-off._
+4.  _For CIFAR-10: **augmentation + moderate width scaling** (~192–256) gives the best trade-off._
