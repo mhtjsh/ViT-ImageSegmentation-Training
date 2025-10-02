@@ -164,3 +164,5 @@ Limitations
 *   Quality of segmentation depends on text–image alignment in CLIPSeg.
     
 *   Random sampling may occasionally pick images with poor matches.
+
+*   If multiple instances of the queried object exist, the model does not distinguish between them i.e. no instane disambiguation.
